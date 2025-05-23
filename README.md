@@ -146,6 +146,46 @@ Actores principales:
 
 ---
 
+### Vistas
+
+- `vista_viajes_chofer`: Viajes con info del chofer y vehículo  
+- `vista_mantenimientos_pendientes`: Fallas sin resolver y último mantenimiento  
+- `vista_consumo_combustible`: Litros/100km por vehículo  
+- `vista_reparaciones_costosas`: Reparaciones > $100.000  
+- `vista_choferes_activos`: Choferes activos y total de viajes  
+
+---
+
+### Funciones
+
+- `f_km_totales_vehiculo(id)`: Total de km por vehículo  
+- `f_promedio_reparacion(id)`: Promedio de costos de reparación  
+- `f_chofer_muy_activo(id, minimo)`: TRUE si supera un umbral de viajes  
+
+---
+
+### Stored Procedures
+
+- `sp_registrar_viaje(...)`  
+- `sp_resolver_falla(id_falla)`  
+- `sp_mantenimiento_rutina(id_vehiculo, tipo, observaciones)`
+
+---
+
+### Triggers
+
+- `tr_fecha_carga_combustible`: Agrega fecha actual si está vacía  
+- `tr_falla_resuelta_actualiza_mantenimiento`: Registra mantenimiento cuando se resuelve una falla
+
+---
+
+## Datos de Prueba
+
+Archivo: [`Datos_Gestionflota_Schnaidler.sql`](Datos_Gestionflota_Schnaidler.sql)  
+Contiene entre 5 y 15 registros por tabla.  
+
+---
+
 ## Script de creación
 
 El script .sql con todas las tablas y claves está disponible en el archivo:  
