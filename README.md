@@ -192,3 +192,17 @@ El script .sql con todas las tablas y claves está disponible en el archivo:
 [GestionFlota_Schnaidler.sql](GestionFlota_Schnaidler.sql)
 
 ---
+
+## 📊 Dashboard Analítico
+
+Análisis visual generado a partir de la base de datos:
+
+![Dashboard KM x vehículo](./KMxauto.PNG)
+
+
+
+![Dashboard de Fallas](./Fallas.PNG)
+
+
+
+![Dashboard de Costos](./Costos.PNG)
